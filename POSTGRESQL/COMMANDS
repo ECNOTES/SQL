@@ -8,7 +8,7 @@ Basic Commands to Query Table
       SELECT DISTINCT ON (column_a), column_b, column_c FROM table;
       SELECT DISTINCT ON (column_a), column_a, column_b, column_c FROM table;
     Filter rows by using WHERE clause.
-    Sort rows by usingORDER BY clause.
+    **Sort rows by using ORDER BY clause.**
       SELECT * FROM table ORDER BY column_a DESC, column_b ASC;
     Select rows based on various operators such as BETWEEN, INand LIKE.
     Group rows into groups using GROUP BY clause
@@ -142,6 +142,8 @@ Basic Commands for Server
   
 Basic Commands for Stats
   ANALYZE -- collect statistics about a database
+  COUNT
+  SELECT COUNT(*) FROM table; -- returns number of rows
   
 Data Dictionary
   COMMENT -- define or change the comment of an object
